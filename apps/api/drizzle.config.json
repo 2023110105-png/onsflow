@@ -1,0 +1,8 @@
+{
+  "schema": "./src/database/drizzle/schema/**/*.ts",
+  "out": "./src/database/drizzle/migrations",
+  "dialect": "postgresql",
+  "dbCredentials": {
+    "url": "postgresql://onsflow:secret@localhost:5432/onsflow_dev"
+  }
+}
