@@ -20,7 +20,7 @@ export class AuthController {
 
   @UseGuards(JwtAuthGuard)
   @Post('validate')
-  async validate(@Request() req) {
+  async validate(@Request() req: any) {
     return this.authService.validateUser(req.user.userId);
   }
 }
