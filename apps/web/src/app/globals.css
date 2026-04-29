@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  /* OnsFlow Brand Colors */
+  --primary-blue: #4A90E2;
+  --accent-pink: #FF6B9D;
+  --success-green: #50C878;
+  --alert-red: #E85D75;
+  --reward-gold: #F5A623;
+  
+  /* Neutral Palette */
+  --neutral-dark: #1A1A2E;
+  --neutral-medium: #4A4A68;
+  --neutral-light: #F5F5F7;
+  --white: #FFFFFF;
+  
+  /* Theme Variables */
+  --background: var(--white);
+  --foreground: var(--neutral-dark);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary-blue);
+  --color-accent: var(--accent-pink);
+  --color-success: var(--success-green);
+  --color-danger: var(--alert-red);
+  --color-warning: var(--reward-gold);
+  --color-neutral-dark: var(--neutral-dark);
+  --color-neutral-medium: var(--neutral-medium);
+  --color-neutral-light: var(--neutral-light);
+  --font-sans: var(--font-plus-jakarta-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--neutral-dark);
+    --foreground: var(--neutral-light);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta-sans), Arial, Helvetica, sans-serif;
+}
