@@ -17,20 +17,7 @@
   /* Theme Variables */
   --background: var(--white);
   --foreground: var(--neutral-dark);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary-blue);
-  --color-accent: var(--accent-pink);
-  --color-success: var(--success-green);
-  --color-danger: var(--alert-red);
-  --color-warning: var(--reward-gold);
-  --color-neutral-dark: var(--neutral-dark);
-  --color-neutral-medium: var(--neutral-medium);
-  --color-neutral-light: var(--neutral-light);
-  --font-sans: var(--font-plus-jakarta-sans);
+  --font-plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
